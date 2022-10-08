@@ -1,0 +1,9 @@
+---
+applications:
+  name: bp-fast
+  memory: 1GB
+  disk_quota: 1.85GB
+  timeout: 280
+  random-route: false
+  buildpack: python_buildpack_1_7_11
+  command: uvicorn main:app --reload --host 0.0.0.0
